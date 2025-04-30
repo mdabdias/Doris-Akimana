@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Main{
+public class InsuranceMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -25,7 +25,7 @@ public class Main{
                 new RoadsideAssistancePolicy("POL500", suv1, person1, 5000, LocalDate.now(), LocalDate.now().plusYears(1), false, true)
         };
 
-        // Main menu
+        // InsuranceMain menu
         boolean running = true;
         while (running) {
             System.out.println("\n=== MAIN MENU ===");
@@ -95,7 +95,7 @@ public class Main{
                     for (InsurancePolicy policy : policies) {
                         if (policy.getPolicyId().equals(validatePolicyId)) {
                             boolean isValid = policy.validatePolicy();
-                            System.out.println("Policy " + policyId + " is " + (isValid ? "valid" : "invalid"));
+                            System.out.println("Policy "+policy+ " is " + (isValid ? "valid" : "invalid"));
                             break;
                         }
                     }

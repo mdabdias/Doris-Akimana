@@ -29,4 +29,5 @@ class Customer {
     public String getEmail() { return email; }
     public String getAddress() { return address; }
     public String getPhone() { return phone; }
+
 }

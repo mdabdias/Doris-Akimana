@@ -1,8 +1,7 @@
 import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class ShoppingMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,7 +25,7 @@ public class Main {
 
         Customer customer = new Customer("CUST-" + System.currentTimeMillis(), name, email, address, phone);
 
-        if (!customer.validateDaketails()) {
+        if (!customer.validateDetails()) {
             System.out.println("Invalid customer details. Please try again.");
             return;
         }

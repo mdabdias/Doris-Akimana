@@ -28,55 +28,27 @@ public abstract class InsurancePolicy {
         return policyId;
     }
 
-    public void setPolicyId(String policyId) {
-        this.policyId = policyId;
-    }
-
     public vehicles getVehicles() {
         return vehicles;
-    }
-
-    public void setVehicles(vehicles vehicles) {
-        this.vehicles = vehicles;
     }
 
     public Person getPolicyHolder() {
         return policyHolder;
     }
 
-    public void setPolicyHolder(Person policyHolder) {
-        this.policyHolder = policyHolder;
-    }
-
     public double getCoverageAmount() {
         return coverageAmount;
-    }
-
-    public void setCoverageAmount(double coverageAmount) {
-        this.coverageAmount = coverageAmount;
     }
 
     public double getPremiumAmount() {
         return premiumAmount;
     }
 
-    public void setPremiumAmount(double premiumAmount) {
-        this.premiumAmount = premiumAmount;
-    }
-
     public LocalDate getPolicyStartDate() {
         return policyStartDate;
     }
 
-    public void setPolicyStartDate(LocalDate policyStartDate) {
-        this.policyStartDate = policyStartDate;
-    }
-
     public LocalDate getPolicyEndDate() {
         return policyEndDate;
-    }
-
-    public void setPolicyEndDate(LocalDate policyEndDate) {
-        this.policyEndDate = policyEndDate;
     }
 }

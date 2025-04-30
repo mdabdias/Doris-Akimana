@@ -1,0 +1,9 @@
+FROM openjdk
+
+WORKDIR /app
+
+COPY Assignment1.ex1/src/ ./src/
+
+RUN javac src/*.java -d ./out
+
+CMD ["java", "-cp", "./out", "StockItemMain"]
